@@ -1,0 +1,537 @@
+*{
+    margin: 0;
+    text-decoration: none;
+    font-family: 'Baloo Tammudu 2', cursive;
+    color : rgb(10, 10, 10);
+}
+/* header */
+header{
+    display: flex;
+    flex-direction: column;/* cambiar segun media*/
+    justify-content: space-around;
+    align-items: flex-start;/* cambiar segun media*/
+    width: 100%;
+    height: 100px;
+    margin-bottom: 1rem;/* cambiar segun media*/
+    background :  rgb(3, 53, 63) ;
+    background-image:url(images/banner-904884_1920.jpg);
+}
+header div{
+    align-self: center;/* cambiar segun media*/
+    font-size: 1.6rem;/* cambiar segun media*/
+    padding: 1rem 1rem 0rem 1rem;/* cambiar segun media*/
+    color : rgb(250, 250, 250);
+    text-shadow: 1px 1px 2px rgb(12, 73, 75);
+}
+nav{
+    font-size: 1rem;/* cambiar segun media*/
+}
+nav a{
+    padding: 0rem 1rem 0rem 1rem;
+    color : rgb(250, 250, 250);
+    text-shadow: 1px 1px 2px rgb(12, 73, 75);
+}
+nav a:hover{
+    color :  rgb(121, 247, 201);
+}
+.quitar{
+    display:none;/* cambiar segun media*/
+}
+
+/* -------------------------------------------------------------------------------------------------- */
+
+/* contenido principal */
+.contenedor{
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-end;
+    flex-wrap: wrap;
+    margin:0 auto;
+    width: 90%;
+}   
+.contenedor .card{
+    width: 80%;
+    background-color: white;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    margin: 2rem;
+}
+.contenedor .card:hover{
+    transform: scale(1.1);
+    transition-duration: 600ms;
+    opacity: 0.9;
+    transition-timing-function: cubic-bezier(.17,.67,.57,.96);
+}
+.contenedor .card img{
+    width: 100%;
+    height: 25vh;
+    object-fit: cover;
+}
+.contenedor .card img:first-child{
+    object-fit: fill;
+}
+.contenedor .card .texto{
+    text-align: center;
+    padding: 0rem 1rem 1rem 1rem;
+}      
+
+/* -------------------------------------------------------------------------------------------------- */
+/* contenido principal de la pagina lenguajes */
+.contenedorLenguajes{
+    display: flex;
+    justify-content: space-around;
+    text-align: center;
+    flex-wrap: wrap;
+    margin:0 auto;
+    width: 90%;
+}  
+.contenedorLenguajes h2{
+    padding: 1rem 1rem 0rem 1rem;
+    font-size: 1rem;
+}
+.contenedorLenguajes h3{
+    font-size: 0.9rem;
+    padding: 0rem 1rem 1rem 1rem;
+}
+.contenedorLenguajes .card{
+    width: 100%;
+    background-color: white;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    margin: 1rem;
+}
+.contenedorLenguajes .card a{
+    display: flex;
+    flex-direction: column;
+    align-self: center;
+    align-items: center;
+}
+.contenedorLenguajes .card a img{
+    width: 40%;
+    margin: 1rem 1rem 1rem 1rem;
+    object-fit: contain;
+}
+.contenedorLenguajes .card .texto{
+    width: 100%;
+    text-align: center;
+    padding: 1.2rem 1.4rem 1.2rem 1.4rem;
+}   
+.contenedorLenguajes .card .texto p{
+    text-align: start;
+    font-size: 0.9rem;
+    padding: 1rem 1rem 1rem 1rem;
+    line-height : 1.4rem;
+}     
+
+
+/* -------------------------------------------------------------------------------------------------- */
+/* contenido principal de la pagina especialidades */
+.contenedorEspecialidades{
+    display: flex;
+    justify-content: space-around;
+    text-align: center;
+    flex-wrap: wrap;
+    margin:0 auto;
+    width: 95%;
+}   
+.contenedorEspecialidades h2{
+    font-size: 1.2rem;
+    padding: 1rem 1rem 0rem 1rem;
+}
+.contenedorEspecialidades h3{
+    font-size: 0.9rem;
+    padding: 0rem 1rem 1rem 1rem;
+    color :  rgb(6, 103, 122) ;
+}
+.contenedorEspecialidades .card{
+    width: 90%;
+    background-color: white;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    border: 1px solid rgb(6, 103, 122) ;
+    margin: 2rem;
+}
+.contenedorEspecialidades .card .texto{
+    text-align: center;
+    padding: 1.2rem 1.4rem 1.2rem 1.4rem;
+}   
+.contenedorEspecialidades .card .texto p{
+    text-align: start;
+    font-size: 0.9rem;
+    padding: 0rem 0rem 0.8rem 0rem;
+    line-height : 1.5rem;
+}   
+
+
+/* -------------------------------------------------------------------------------------------------- */
+/* contenido principal de la pagina juegos */
+.contenedorJuegos{
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    margin:0 auto;
+    width: 90%;
+}   
+.contenedorJuegos h2{
+    font-size: 1.1rem;
+    text-align: center;
+}
+.contenedorJuegos .card{
+    width: 90%;
+    background-color: white;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    margin: 1rem;
+}
+.contenedorJuegos .card a{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.contenedorJuegos .card a img{
+    width: 90%;
+    margin: 1rem 1rem 1rem 1rem;
+    object-fit: contain;
+}
+.contenedorJuegos .card .texto{
+    width: 90%;
+    text-align: center;
+}   
+.contenedorJuegos .card .texto p{
+    text-align: start;
+    font-size: 0.9rem;
+    padding: 0rem 0.5rem 0.8rem 0.5rem;
+    line-height : 1.4rem;
+}     
+
+
+/* -------------------------------------------------------------------------------------------------- */
+/* contenido principal de la pagina videos */
+.contenedorVideos{
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-end;
+    flex-wrap: wrap;
+    margin:0 auto;
+    width: 95%;
+}   
+.contenedorVideos h2{
+    font-size: 1rem;
+    text-align: center;
+    margin: 1rem;
+}
+.contenedorVideos .card{
+    width: 90%;
+    background-color: white;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    margin: 1rem;
+}
+.contenedorVideos .card:hover{
+    transform: scale(1.1);
+    transition-duration: 600ms;
+    opacity: 0.9;
+    transition-timing-function: cubic-bezier(.17,.67,.57,.96);
+}
+.contenedorVideos .card a{
+    display: flex;
+    align-self: center;
+    align-items: center;
+}
+.contenedorVideos .card a img{
+    width: 90%;
+    margin:0 auto;
+    padding: 1rem 1rem 1rem 1rem;
+    object-fit: contain;
+}
+
+
+/* -------------------------------------------------------------------------------------------------- */
+/* contenido principal de la pagina contacto */
+.containerContacto{
+    display: flex;
+    justify-content: space-around;
+    text-align: center;
+    flex-wrap: wrap;
+    margin:0 auto;
+    width: 100%;
+}   
+.containerContacto .texto{
+    text-align: left;
+    margin-bottom: 2rem;
+    padding-right: 1rem;
+}
+.containerContacto .card{
+    display: flex;
+    align-self: center;
+    justify-content: center;
+    width: 100%;
+    background-color: white;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    padding: 1rem;
+    margin: 1rem;
+}
+.form-row{
+    width: 90%;
+}
+.form-group{
+    text-align: start;
+    margin-top: 1.5rem;
+}
+.form-control{
+    width: 100%;
+    padding: 0.2rem 1rem 0rem 1rem;
+    border: 1px solid rgb(6, 103, 122);
+    border-radius: .25em;
+}
+.boton{
+    background-color: rgb(6, 103, 122);
+    color: white;
+    padding: 0.2rem 1rem 0rem 1rem;
+    cursor: pointer;
+
+}
+.containerContacto .cardMapa{
+    display: flex;
+    flex-direction: column;
+    align-self: center;
+    justify-content: center;
+    width: 100%;
+    background-color: white;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    padding: 1rem;
+    margin: 1rem;
+}
+.containerContacto .cardMapa .texto{
+    font-size: 0.8rem;
+    padding: 0.2rem 1rem 0rem 1rem;
+}
+iframe{
+    width: 100%;
+}
+
+/* ----------------------------------------------------footer------------------------------------------------------ */
+
+
+/* footer */
+footer{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background :  rgb(3, 53, 63) ;
+    width: 100%;
+    height: 6rem;
+    color : rgb(250, 250, 250);
+    font-size: 1rem;
+    margin-top: 1rem;
+}
+footer div{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    color :  rgb(191, 234, 243) ;
+}
+footer div a{
+    display: flex;
+    align-items: center;
+    padding: 0rem 0.7rem;
+    font-size: 1.1rem;
+    color : rgb(250, 250, 250);
+}
+footer div a i{
+    display: flex;
+    align-items: center;
+    padding: 0rem 0.7rem;
+    font-size: 1.5rem;
+    color : rgb(250, 250, 250);
+}
+footer div a:hover, footer div a i:hover{
+    color :  rgb(121, 247, 201);
+}
+.linksSociales{
+    font-size: 2rem;
+}
+
+
+
+/* ----------------------------------------------------Media------------------------------------------------------ */
+
+
+@media screen and (min-width: 640px){
+
+    .contenedor {
+        width: 70%;
+    }
+    footer div a{
+        padding: 0rem 1rem;
+        font-size: 1.2rem;
+    }
+    footer div a i{
+        padding: 0rem 1rem;
+        font-size: 2rem;
+    }
+    .contenedorLenguajes{
+        width: 80%;
+    }
+    .contenedorLenguajes h2{
+        /* margin: 2rem; */
+        font-size: 1.5rem;
+    }
+    .contenedorLenguajes h3{
+        /* margin: 2rem; */
+        font-size: 1rem;
+    }
+    .contenedorLenguajes .card a img{
+        width: 20%;
+    }
+    .contenedorJuegos{
+        width: 70%;
+    }
+    .contenedorJuegos .card{
+        width: 70%;
+        margin: 3rem;
+    }
+    .contenedorJuegos h2{
+        font-size: 1.5rem;
+        margin: 2rem;
+    }
+    .contenedorEspecialidades {
+        width: 80%;
+    }
+    .contenedorVideos h2{
+        font-size: 1.4rem;
+        margin: 1.5rem;
+    }
+    .containerContacto .card{
+        width: 70%;
+        padding: 2rem;
+        margin: 2rem;
+    }
+    .containerContacto .cardMapa{
+        width: 70%;
+        padding: 2rem;
+        margin: 2rem;
+    }
+
+}
+
+@media screen and (min-width: 1280px) {
+
+    .quitar{
+        display: inline-flex;
+    }
+    header{
+        flex-direction: row;
+        align-items: flex-end;
+    }
+    header div{
+        font-size: 2.7rem;
+    }
+    nav{
+        font-size: 1.1em;/* cambiar segun media*/
+    }
+    nav a{
+        padding: 0rem 1rem 1rem 0rem;
+    }
+    .contenedor {
+        width: 60%;
+    }
+    .contenedor .card{
+        width: 40%;
+    }   
+    footer div a{
+        padding: 0rem 1rem;
+        font-size: 1rem;
+    }
+    footer div a i{
+        padding: 0rem 1rem;
+        font-size: 2rem;
+    }
+    .contenedorLenguajes {
+        width: 50%;
+    }
+    .contenedorLenguajes h2{
+        font-size: 1.5rem;
+    }
+    .contenedorLenguajes h3{
+        font-size: 1.2rem;
+    }
+    .contenedorLenguajes .card{
+        width: 80%;
+        margin: 2rem;
+    }
+    .contenedorLenguajes .card a{
+        flex-direction: row;
+    }
+    .contenedorLenguajes .card a img{
+        margin: 2rem 0rem 2rem 3rem;
+    }
+    .contenedorLenguajes .card .texto{
+        width: 65%;
+    }  
+    .contenedorLenguajes .card .texto p{
+        line-height : 1.5rem;
+    }
+    .contenedorEspecialidades {
+        width: 50%;
+    }
+    .contenedorEspecialidades h2{
+        font-size: 1.5rem;
+    }
+    .contenedorEspecialidades h3{
+        font-size: 1.2rem;
+    }
+    .contenedorEspecialidades .card .texto p{
+        padding: 0rem 3rem 0.8rem 3rem;
+    }     
+    .contenedorJuegos{
+        width: 60%;
+    }   
+    .contenedorJuegos h2{
+        font-size: 1.5rem;
+        margin: 2rem;
+    }
+    .contenedorJuegos .card{
+        margin: 2rem;
+    }
+    .contenedorJuegos .card a{
+        flex-direction: row;
+    }
+    .contenedorJuegos .card a img{
+        width: 50%;
+    }
+    .contenedorJuegos .card .texto{
+        width: 50%;
+        padding: 1.2rem 1.4rem 1.2rem 1.4rem;
+    }  
+    .contenedorJuegos .card .texto p{
+        padding: 0rem 0rem 0.8rem 0rem;
+        line-height : 1.5rem;
+    }    
+    .contenedorVideos{
+        width: 60%;
+    }   
+    .contenedorVideos h2{
+        font-size: 1.4rem;
+        margin: 3rem 1rem 2rem 1rem;
+    }
+    .contenedorVideos .card{
+        width: 80%;
+        margin: 2rem;
+    }
+    .containerContacto{
+        width: 60%;
+    }
+    .containerContacto .card{
+        width: 60%;
+    }
+    .containerContacto .cardMapa{
+        width: 60%;
+    }
+    .form-row{
+        width: 100%;
+    }
+    iframe{
+        width: 100%;
+        height:450px;
+    }
+
+}
+
+
+
